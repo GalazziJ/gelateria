@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Referenciando a fonte de ícones font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Referenciando o CSS -->
+  <link rel="stylesheet" href="styles/geral.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/cardapio.css">
+  <link rel="stylesheet" href="styles/footer.css">
+
+  <!-- Referenciando o JQuery para animações -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Importando JavaScript -->
+  <script src="src/js/script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Importando ícone -->
+  <link rel="shortcut icon" href="src/img/icons8-ice-cream-32.png" type="image/x-icon">
+  <title>Gelateria Ice</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <!-- Logo da barra de navegação -->
+      <i class="fa-solid fa-ice-cream" id="nav_logo"> ICE</i>
+
+      <!-- Menu para desktop -->
+      <ul id="nav_list">
+        <li class="nav-item active"><a href="#home">Início</a></li>
+        <li class="nav-item"><a href="#menu">Cardápio</a></li>
+
+      </ul>
+
+      <button class="btn-default">Peça aqui</button>
+
+      <!-- Menu hamburguer para dispositivos móveis -->
+      <button id="mobile_btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Barra de navegação para dispositivos móveis -->
+    <div id="mobile_menu">
+      <ul id="mobile_nav_list">
+        <li class="nav-item"><a href="#home">Início</a></li>
+        <li class="nav-item"><a href="#menu">Cardápio</a></li>
+
+      </ul>
+
+      <button class="btn-default">Peça aqui</button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="home">
+
+      <div id="call-to-action">
+        <h1 class="titulo">O sabor que vai até <span>você</span></h1>
+
+        <p class="descricao">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla vitae eius facere libero doloremque voluptas,
+          assumenda ab, saepe soluta repudiandae quidem quibusdam, dolorum dolorem beatae veniam quo accusantium velit
+          laboriosam?
+        </p>
+
+        <div class="call-to-action_buttons">
+          <a href="#" class="btn-default">Ver cardápio</a>
+
+          <a href="tel:+555555555" id="telefone-button">
+            <button class="btn-default">
+              <i class="fa-solid fa-phone"></i>
+            </button>
+            (27) 00000-0000
+          </a>
+        </div>
+
+        <div class="social-media-buttons">
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="src/img/sorvetes.png">
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2 class="section-titulo">Cardápio</h2>
+      <h3 class="section-subtitulo">Especiais</h3>
+
+      <div id="pratos">
+        <div class="prato">
+          <div class="prato-coracao">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="src/img/sorvete1.png" class="imagem-prato">
+
+          <h3 class="prato-titulo">Açaí na taça</h3>
+          <span class="prato-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+
+          <div class="prato-avaliacao">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+
+          <div class="prato-preco">
+            <h4>R$30,00</h4>
+          </div>
+
+          <button class="btn-default">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </button>
+        </div>
+
+        <div class="prato">
+          <div class="prato-coracao">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="src/img/sorvete2.png" class="imagem-prato">
+
+          <h3 class="prato-titulo">Sorvetes</h3>
+          <span class="prato-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+
+          <div class="prato-avaliacao">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+
+          <div class="prato-preco">
+            <h4>R$20,00</h4>
+          </div>
+
+          <button class="btn-default">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </button>
+        </div>
+
+        <div class="prato">
+          <div class="prato-coracao">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="src/img/sorvete3.png" class="imagem-prato">
+
+          <h3 class="prato-titulo">Picolé especial com cobertura</h3>
+          <span class="prato-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+
+          <div class="prato-avaliacao">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+
+          <div class="prato-preco">
+            <h4>R$15,00</h4>
+          </div>
+
+          <button class="btn-default">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </button>
+        </div>
+
+        <div class="prato">
+          <div class="prato-coracao">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="src/img/sorvete4.png" class="imagem-prato">
+
+          <h3 class="prato-titulo">Bolo de sorvete (Vários sabores)</h3>
+          <span class="prato-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+
+          <div class="prato-avaliacao">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+
+          <div class="prato-preco">
+            <h4>R$25,00</h4>
+          </div>
+
+          <button class="btn-default">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="src/img/wave.svg" alt="" srcset="">
+
+    <div id="footer-itens">
+      <span id="copyright">
+        &copy; 2024 Jamille Galazzi
+      </span>
+
+      <div class="social-media-buttons">
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
