@@ -3,7 +3,7 @@
 O projeto de landing page de gelateria foi feito utilizando HTML, CSS e JavaScript com o intuito de aplicar os conhecimentos em desenvolvimento web para a eletiva de nome "Surfando na Web".
 
 # Acessar o site
-Acesse <a href ="https://galazzij.github.io/">aqui</a>
+Acesse <a href ="https://gelateria-tau.vercel.app/">aqui</a>
 
 # Imagens do projeto
 ![Captura de Tela (137)](https://github.com/GalazziJ/galazzij.github.io/assets/141592359/04f6accd-91fc-4b8e-abcf-440594ccffa1)
